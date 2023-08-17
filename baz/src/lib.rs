@@ -1,5 +1,9 @@
-bar::define_parameters! {
-	pub Parameters = {
-		Test: u32 = 1,
-	}
+pub trait BazTrait {
+    type BazType;
+}
+
+pub struct Baz;
+
+impl BazTrait for Baz {
+    type BazType = u32;
 }
